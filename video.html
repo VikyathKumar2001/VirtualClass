@@ -18,204 +18,152 @@
             text-align: center;
             color: aquamarine;
         }
+
+
     </style>
 </head>
 
 <body style="background-color: lightcyan;">
-    <!-- Pills navs -->
-    <div class="row px-4">
-        <div class="col-md-8 px-4"
-            style="background-color: white; padding: 15px; border: 1px solid black; border-radius: 1rem; ">
-            <ul class="nav nav-pills nav-justified mb-3" id="ex1" role="tablist">
-                <li class="nav-item" role="presentation">
-                    <a class="nav-link active" id="tab-login" data-mdb-toggle="pill" href="#pills-login" role="tab"
-                        aria-controls="pills-login" aria-selected="true">Login</a>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <a class="nav-link" id="tab-register" data-mdb-toggle="pill" href="#pills-register" role="tab"
-                        aria-controls="pills-register" aria-selected="false">Register</a>
-                </li>
-            </ul>
-            <!-- Pills navs -->
+    <br><br>
+<h3 class="text-center">MEAN Stack</h3>
+<h6 class="text-center">MongoDB-Express-Angular-NodeJs</h6>
+<br>
+<br>
+<div class="d-flex  justify-content-center align-items-center" >
+<table>
+  
+  <tr>
+    <td>
 
-            <!-- Pills content -->
-            <div class="tab-content">
-                <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="tab-login">
-                    <form>
-                        <div class="text-center mb-3">
-                            <p>Sign in with:</p>
-                            <button type="button" class="btn btn-link btn-floating mx-1">
-                                <i class="fab fa-facebook-f"></i>
-                            </button>
-
-                            <button type="button" class="btn btn-link btn-floating mx-1">
-                                <i class="fab fa-google"></i>
-                            </button>
-
-                            <button type="button" class="btn btn-link btn-floating mx-1">
-                                <i class="fab fa-twitter"></i>
-                            </button>
-
-                            <button type="button" class="btn btn-link btn-floating mx-1">
-                                <i class="fab fa-github"></i>
-                            </button>
-                        </div>
-
-                        <p class="text-center">or:</p>
-
-                        <!-- Email input -->
-                        <div class="form-outline mb-4">
-                            <input type="email" id="loginName" class="form-control" />
-                            <label class="form-label" for="loginName">Email or username</label>
-                        </div>
-
-                        <!-- Password input -->
-                        <div class="form-outline mb-4">
-                            <input type="password" id="loginPassword" class="form-control" />
-                            <label class="form-label" for="loginPassword">Password</label>
-                        </div>
-
-                        <!-- 2 column grid layout -->
-                        <div class="row mb-4">
-                            <div class="col-md-6 d-flex justify-content-center">
-                                <!-- Checkbox -->
-                                <div class="form-check mb-3 mb-md-0">
-                                    <input class="form-check-input" type="checkbox" value="" id="loginCheck" checked />
-                                    <label class="form-check-label" for="loginCheck"> Remember me </label>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6 d-flex justify-content-center">
-                                <!-- Simple link -->
-                                <a href="#!">Forgot password?</a>
-                            </div>
-                        </div>
-
-                        <!-- Submit button -->
-                        <button type="submit" class="btn btn-primary btn-block mb-4">Sign in</button>
-
-                        <!-- Register buttons -->
-                        <div class="text-center">
-                            <p>Not a member? <a href="#!">Register</a></p>
-                        </div>
-                    </form>
-                </div>
-                <div class="tab-pane fade" id="pills-register" role="tabpanel" aria-labelledby="tab-register">
-                    <form>
-                        <div class="text-center mb-3">
-                            <p>Sign up with:</p>
-                            <button type="button" class="btn btn-link btn-floating mx-1">
-                                <i class="fab fa-facebook-f"></i>
-                            </button>
-
-                            <button type="button" class="btn btn-link btn-floating mx-1">
-                                <i class="fab fa-google"></i>
-                            </button>
-
-                            <button type="button" class="btn btn-link btn-floating mx-1">
-                                <i class="fab fa-twitter"></i>
-                            </button>
-
-                            <button type="button" class="btn btn-link btn-floating mx-1">
-                                <i class="fab fa-github"></i>
-                            </button>
-                        </div>
-
-                        <p class="text-center">or:</p>
-
-                        <!-- Name input -->
-                        <div class="form-outline mb-4">
-                            <input type="text" id="registerName" class="form-control" />
-                            <label class="form-label" for="registerName">Name</label>
-                        </div>
-
-                        <!-- Username input -->
-                        <div class="form-outline mb-4">
-                            <input type="text" id="registerUsername" class="form-control" />
-                            <label class="form-label" for="registerUsername">Username</label>
-                        </div>
-
-                        <!-- Email input -->
-                        <div class="form-outline mb-4">
-                            <input type="email" id="registerEmail" class="form-control" />
-                            <label class="form-label" for="registerEmail">Email</label>
-                        </div>
-
-                        <!-- Password input -->
-                        <div class="form-outline mb-4">
-                            <input type="password" id="registerPassword" class="form-control" />
-                            <label class="form-label" for="registerPassword">Password</label>
-                        </div>
-
-                        <!-- Repeat Password input -->
-                        <div class="form-outline mb-4">
-                            <input type="password" id="registerRepeatPassword" class="form-control" />
-                            <label class="form-label" for="registerRepeatPassword">Repeat password</label>
-                        </div>
-
-                        <!-- Checkbox -->
-                        <div class="form-check d-flex justify-content-center mb-4">
-                            <input class="form-check-input me-2" type="checkbox" value="" id="registerCheck" checked
-                                aria-describedby="registerCheckHelpText" />
-                            <label class="form-check-label" for="registerCheck">
-                                I have read and agree to the terms
-                            </label>
-                        </div>
-
-                        <!-- Submit button -->
-                        <button type="submit" class="btn btn-primary btn-block mb-3">Sign in</button>
-                    </form>
-                </div>
-            </div>
+      <div class="card img-container" style="width: 18rem;" >
+       
+        <img src="./images/MongoDB  (1).gif" height="100%" class="card-img-top image"  alt="...">
+        
+        <div class="overlay" >
+          <div class="text" style="color: black; padding: 5px;">MONGO DB</div>
         </div>
-        <div class="col-md-4">
-            <div class="card py-4" style="border: 1px solid black; border-radius: 1rem;">
-                <table class="table table-hover">
-                    <tbody class="px-3">
-                        <tr>
-                            <td colspan="4"></td>
-                        </tr>
-                        <tr>
-                            <td colspan="4"><button class="btn btn-success">Reference Link</button></td>
-                        </tr>
-                        <tr>
-                            <td colspan="4"><a class="btn btn-dark" href="https://www.geeksforgeeks.com" >GeeksForGeeks</a></td>
-                        </tr>
-                        <tr>
-                            <td colspan="4"><a class="btn btn-dark" href="https://www.geeksforgeeks.com">W3Schools</a></td>
-                        </tr>
-                        <tr>
-                            <td colspan="4"><a class="btn btn-dark" href="https://www.geeksforgeeks.com">CodeChef</a></td>
-                        </tr>
-                        <tr>
-                            <td colspan="4"><a class="btn btn-dark" href="https://www.geeksforgeeks.com">LeetCode</a></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="card my-2 py-4" style="border: 1px solid black; border-radius: 1rem;">
-                <table class="table table-hover">
-                    <tbody class="px-3">
-                        <tr>
-                            <td colspan="4"></td>
-                        </tr>
-                        <tr>
-                            <td colspan="4"><a class="btn btn-danger" href="https://www.geeksforgeeks.com" >Competitive</a></td>
-                        </tr>
-                        <tr>
-                            <td colspan="4"><a class="btn btn-dark" href="https://www.geeksforgeeks.com">LeetCode</a></td>
-                        </tr>
-                        <tr>
-                            <td colspan="4"><a class="btn btn-dark" href="https://www.geeksforgeeks.com">CodeChef</a></td>
-                        </tr>
-                        
-                    </tbody>
-                </table>
-            </div>
+      </div>
+
+    </td>
+    <td>
+      <div class="card img-container" style="width: 18rem;">
+       
+        <img src="./images/express (1).jpg" height="100%" class="card-img-top image" alt="...">
+        
+        <div class="overlay">
+          <div class="text" style="color: black; padding: 5px;">Express JS</div>
         </div>
+      </div>
+    </td>
+    <td>
+      <div class="card img-container" style="width: 18rem;">
+       
+        <img src="./images/angular (1).png" class="card-img-top image" alt="...">
+        
+        <div class="overlay">
+          <div class="text" style="color: black; padding: 5px;">Angular</div>
+        </div>
+      </div>
+    </td>
+    <td>
+
+      <div class="card img-container" style="width: 18rem;">
+       
+        <img src="./images/nodejs (1).png" class="card-img-top image" alt="...">
+        
+        <div class="overlay">
+          <div class="text" style="color: black; padding: 5px;">Node JS</div>
+        </div>
+      </div>
+
+    </td>
+  </tr>
+</table>
+</div>
+
+<br>
+<br>
+<div class="jumbotron jumbotron-fluid" style="background-color:#ccc;color: rgb(227, 26, 26);width: 100%;height: 200px;padding-top: 50px;">
+    <div class="container">
+      <h1 class="display-7">MERN STACK</h1>
+      <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti facere porro quidem natus non soluta nam fugit, laboriosam optio perspiciatis unde modi beatae minus. Beatae ab reprehenderit at consequuntur dignissimos..</p>
     </div>
-    <!-- Pills content -->
-    </div>
+  </div>
+
+  <br>
+  <br>
+<h3 class="text-center">MERN Stack</h3>
+<h6 class="text-center">MongoDB-Express-ReactJS-NodeJs</h6>
+<br>
+<br>
+<div class="d-flex  justify-content-center align-items-center" >
+<table>
+  
+  <tr>
+    <td>
+
+      <div class="card img-container" style="width: 18rem;" >
+       
+        <img src="./images/MongoDB  (1).gif" height="100%" class="card-img-top image"  alt="...">
+        
+        <div class="overlay" >
+          <div class="text" style="color: black; padding: 5px;">MONGO DB</div>
+        </div>
+      </div>
+
+    </td>
+    <td>
+      <div class="card img-container" style="width: 18rem;">
+       
+        <img src="./images/express (1).jpg" height="100%" class="card-img-top image" alt="...">
+        
+        <div class="overlay">
+          <div class="text" style="color: black; padding: 5px;">Express JS</div>
+        </div>
+      </div>
+    </td>
+    <td>
+      <div class="card img-container" style="width: 18rem;">
+       
+        <img src="./images/React (1).png" class="card-img-top image" alt="...">
+        
+        <div class="overlay">
+          <div class="text" style="color: black; padding: 5px;">React JS</div>
+        </div>
+      </div>
+    </td>
+    <td>
+
+      <div class="card img-container" style="width: 18rem;">
+       
+        <img src="./images/nodejs (1).png" class="card-img-top image" alt="...">
+        
+        <div class="overlay">
+          <div class="text" style="color: black; padding: 5px;">Node JS</div>
+        </div>
+      </div>
+
+    </td>
+  </tr>
+</table>
+</div>
+
+<br>
+<br>
+
+<div class="jumbotron jumbotron-fluid" style="background-color:#ccc;color: rgb(52, 19, 100);width: 100%;height: 200px;padding-top: 50px;">
+  <div class="container">
+    <h1 class="display-7">MERN STACK</h1>
+    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti facere porro quidem natus non soluta nam fugit, laboriosam optio perspiciatis unde modi beatae minus. Beatae ab reprehenderit at consequuntur dignissimos..</p>
+  </div>
+</div>
+
+<br><br>
+
+    
+
+
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
